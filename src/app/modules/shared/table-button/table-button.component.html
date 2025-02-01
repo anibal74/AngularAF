@@ -1,0 +1,5 @@
+<div class="btn-group" role="group">
+    <input class="btn btn-{{styleButtonUpdate}}" *ngIf="showUpdate" type="button" [value]="labelUpdate" (click)="clicEventUpdate()">
+    <input class="btn btn-danger" *ngIf="showDelete" type="button" [value]="labelDelete" (click)="clicEventDelete()">
+    <input class="btn btn-success" *ngIf="showOption" type="button" [value]="labelAditional" (click)="clicEventOption()">    
+</div>

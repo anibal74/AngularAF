@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-center">
+    <div class="w-25">
+        <div class="display-3">
+            Login
+        </div>
+        <br>
+        <div>
+            <form [autocomplete]="false">
+                <div class="h4">
+                    <span class="border border-primary">Bienvenido a VMT Dev-1</span>                    
+                </div>
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input class="form-control" [(ngModel)]="objetoLogin.user" type="text" name="usuario" placeholder="Ingresa tu usuario o tu correo" id="usuario">
+                </div>
+                <div>
+                    <label for="password">Contrase&ntilde;a:</label>
+                    <input class="form-control" [(ngModel)]="objetoLogin.password" type="password" name="password" [placeholder]="'Ingresa tu contraseña'" id="password">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" [(ngModel)]="objetoLogin.logged" type="checkbox" name="islogged" id="logged">
+                    <label class="form-check-label" for="logged">Mantener sesi&oacute;n iniciada</label>
+                </div>
+                <div>
+                    <button class="btn btn-success w-100" (click)="loginProces()">Iniciar sesi&oacute;n</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning mt-2 w-100" type="button" (click)="clicEventEmitter()">Registrarse</button>
+                </div>
+                <div>
+                    <button class="btn btn-link" type="button">Recuperar contrase&ntilde;a</button>
+                </div>
+            </form>
+    
+        </div>
+    </div>
+
+</div>

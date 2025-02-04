@@ -26,7 +26,8 @@
                     {{person.phone }}
                 </td>
                 <td>
-                    <app-table-button [showOption]="true" [labelUpdate]="'Grabar'" [styleButtonOption]="'warning'" [labelAditional]="'Mostrar'"></app-table-button>
+                    <app-table-button [buttonProperties]="buttonProperties" [personData]="person">
+                    </app-table-button>
                 </td>
             </tr>
         </tbody>

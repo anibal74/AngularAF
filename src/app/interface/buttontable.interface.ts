@@ -1,5 +1,3 @@
-import { BlobOptions } from "buffer";
-
 export interface ButtonTableI {
     labelUpdate?: string,
     labelDelete?: string,
